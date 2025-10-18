@@ -1,0 +1,317 @@
+/* styles.css */
+
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif; /* You can choose a different font later */
+    line-height: 1.6;
+    color: #333; /* Default text color */
+    background-color: #ffffff; /* White background */
+}
+
+/* Header Styles */
+header {
+    background-color: #ffffff; /* White background for header */
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky; /* Keeps header at the top when scrolling */
+    top: 0;
+    z-index: 1000; /* Ensures header stays on top of other content */
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px; /* Adjust height as needed */
+    width: auto;
+}
+
+/* Navigation Styles */
+.nav-menu ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav-menu ul li {
+    margin-left: 25px; /* Space between navigation items */
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #007bff; /* Blue color for links */
+    font-weight: bold; /* Makes links bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.nav-menu ul li a:hover {
+    color: #28a745; /* Green color on hover */
+}
+
+/* Main Content Styles */
+main {
+    /* No specific styles needed here for now */
+}
+
+/* Section Styles (General) */
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero Section Specific Styles */
+#hero {
+    background-color: #e9f7ef; /* Light green background */
+    text-align: center;
+    padding: 80px 20px;
+}
+
+#hero h1 {
+    font-size: 2.8rem; /* Large font size */
+    color: #007bff; /* Blue color for main heading */
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.3rem;
+    color: #6c757d; /* Muted color */
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section Specific Styles */
+#services {
+    background-color: #ffffff; /* White background */
+    text-align: center;
+}
+
+#services h2 {
+    color: #007bff; /* Blue color */
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+#services p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Agent Section Specific Styles */
+#agent {
+    background-color: #f8f9fa; /* Light grey background */
+    text-align: center;
+}
+
+#agent h2 {
+    color: #28a745; /* Green color */
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+#agent p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Agent Benefits Container */
+.agent-benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.agent-benefit {
+    flex: 1;
+    min-width: 200px;
+    max-width: 250px;
+    padding: 25px;
+    background-color: #ffffff; /* White background for boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.agent-benefit:hover {
+    transform: translateY(-5px); /* Lift box slightly on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Deeper shadow on hover */
+}
+
+.icon-placeholder {
+    font-size: 2.5rem; /* Large size for placeholder icons */
+    margin-bottom: 15px;
+    color: #007bff; /* Blue color for placeholder */
+}
+
+.agent-benefit h4 {
+    color: #007bff; /* Blue color for titles */
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.agent-benefit p {
+    color: #6c757d; /* Muted color for descriptions */
+    font-size: 0.95rem;
+}
+
+/* API Section Specific Styles */
+#api {
+    background-color: #ffffff; /* White background */
+    text-align: center;
+}
+
+#api h2 {
+    color: #007bff; /* Blue color */
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+#api p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* API Features Container */
+.api-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.api-feature {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    padding: 25px;
+    background-color: #e9f7ef; /* Light green background for boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.api-feature:hover {
+    transform: translateY(-5px); /* Lift box slightly on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Deeper shadow on hover */
+}
+
+.api-feature h3 {
+    color: #28a745; /* Green color for titles */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.api-feature p {
+    color: #6c757d; /* Muted color for descriptions */
+    font-size: 0.95rem;
+}
+
+/* Why Us Section Specific Styles */
+#why-us {
+    background-color: #f8f9fa; /* Light grey background */
+    text-align: center;
+}
+
+#why-us h2 {
+    color: #007bff; /* Blue color */
+    margin-bottom: 20px;
+    font-size: 2.2rem;
+}
+
+#why-us p {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 1.1rem;
+    color: #6c757d;
+}
+
+/* Why Us Features Container */
+.why-us-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.why-us-feature {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 25px;
+    background-color: #ffffff; /* White background for boxes */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover effect */
+}
+
+.why-us-feature:hover {
+    transform: translateY(-5px); /* Lift box slightly on hover */
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15); /* Deeper shadow on hover */
+}
+
+.why-us-feature h3 {
+    color: #28a745; /* Green color for titles */
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+}
+
+.why-us-feature p {
+    color: #6c757d; /* Muted color for descriptions */
+    font-size: 0.95rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #343a40; /* Dark background */
+    color: white;
+    text-align: center;
+    padding: 25px 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .nav-menu ul {
+        margin-top: 15px; /* Space between logo and nav on mobile */
+        flex-wrap: wrap; /* Allow nav items to wrap */
+        justify-content: center; /* Center nav items */
+    }
+
+    .nav-menu ul li {
+        margin: 5px 10px; /* Adjust margin for mobile */
+    }
+
+    #hero h1 {
+        font-size: 2.2rem; /* Smaller font on mobile */
+    }
+
+    .agent-benefit,
+    .api-feature,
+    .why-us-feature {
+        min-width: 200px;
+        max-width: 100%;
+    }
+}
